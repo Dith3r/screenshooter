@@ -50,8 +50,7 @@ class Shooter:
         args = self._parser.parse_args()
 
         if args:
-            cmd = self._types[args.type]
-            cmd()
+            self._types[args.type]()
         else:
             self._parser.print_help()
 
